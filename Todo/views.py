@@ -29,6 +29,9 @@ class Todo_detail(DetailView):
 
 class New_todo (CreateView):
     model=Todo
+    fields=['name','detail']
+    success_url='/Todo/'
+
 
 
 class Edit_todo(UpdateView):
